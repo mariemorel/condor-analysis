@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
 import pandas as pd
-from Bio import SeqIO
-from Bio.SubsMat import MatrixInfo
 from scipy import sparse
 
 # handle alignment
@@ -12,7 +10,6 @@ from collections import Counter
 import numpy as np
 
 # handle arguments
-import os
 import argparse
 import glob
 

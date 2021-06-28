@@ -1,4 +1,4 @@
-path_file = "/pasteur/zeus/projets/p01/Evolbioinfo/users/mamorel/Projet_Convergence/Data/"
+path_file = "condor-analysis/data/synthetic_HIV"
 
 params.tree = path_file+"/preprocessing/reroot.B.pol.aa.norecomb.noPRandRTdrm.treefile" 
 params.root = path_file+"/preprocessing/5_RT_hxb2_naturepaper.txt"
@@ -6,15 +6,15 @@ params.root = path_file+"/preprocessing/5_RT_hxb2_naturepaper.txt"
 params.ref_freq = "0.060490222, 0.066039665, 0.044127815, 0.042109048, 0.020075899, 0.053606488, 0.071567447, 0.072308239, 0.022293943, 0.069730629, 0.098851122, 0.056968211, 0.019768318, 0.028809447, 0.046025282, 0.05060433, 0.053636813, 0.033011601, 0.028350243, 0.061625237"
 params.rates_init = path_file+"/preprocessing/5RT_hxb2_naturepaper.rate"
 params.mode = 'HIVb' //never changes
-params.simulation_model = path_file+"args/raw/HIVb_phyml.model" //changes to JTT_phyml.model or HIV HIVb_phyml.model
+params.simulation_model = path_file+"/preprocessing/HIVb_phyml.model" //changes to JTT_phyml.model or HIV HIVb_phyml.model
 params.iqtreemode = 'HIVb+G6' //changes to JTT+G6 or HIVb+G6
 //params.sdrms = path_file+"args/processed/naturepaper/sequences_with_most_common_RT_SDRMs.txt"
-params.sdrms = path_file+"args/processed/naturepaper/sequences_with_DRMs_RT.txt"
-params.outgroup = path_file+"trees/processed/naturepaper/B.pol.aa.woutgroup.norecomb.maskeddrm.outgroup"
-params.matrix = path_file+"args/raw/HIV_phyml.pastml_matrix" //changes to JTT.pastml_matrix or HIV_phyml.pastml_matrix
-params.reconstruction = "false" //do we reconstruct the tree from scratch once simulated or do we only reoptimize ?
+params.sdrms = path_file+"/sequences_with_DRMs_RT.txt"
+params.outgroup = path_file+"/preprocessing/B.pol.aa.woutgroup.norecomb.maskeddrm.outgroup"
+params.matrix = path_file+"/preprocessing/HIV_phyml.pastml_matrix" //changes to JTT.pastml_matrix or HIV_phyml.pastml_matrix
+params.reconstruction = "true" //do we reconstruct the tree from scratch once simulated or do we only reoptimize ?
 
-params.resdir=path_file+"results/naturepaper/synthetic_HIVG6maskedDRMsparse_12/" //do not forget to change the resdir
+params.resdir=path_file+"results/" //do not forget to change the resdir
 
 params.nb_simu = 10000
 params.length = 1250 // length of the root = 5*250
@@ -32,11 +32,9 @@ outgroup = file(params.outgroup)
 matrix = file(params.matrix)
 reconstruction = params.reconstruction
 
-
 nb_simu = params.nb_simu
 length = params.length
 nb_tips = params.nb_tips
-
 
 resdir=file(params.resdir)
 resdir.with {mkdirs()}

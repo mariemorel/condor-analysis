@@ -44,12 +44,12 @@ AA = list("ARNDCQEGHILKMFPSTWYV")
 
 if args.mode == "HIVb":
     S_df = pd.read_csv(
-        '/pasteur/zeus/projets/p01/Evolbioinfo/users/mamorel/Projet_Convergence/Data/args/raw/HIVb_phyml.model', sep='\t', index_col=0)
+        'HIVb_phyml.model', sep='\t', index_col=0)
     PI = np.array(frequencies)
 
 else:
     S_df = pd.read_csv(
-        '/pasteur/zeus/projets/p01/Evolbioinfo/users/mamorel/Projet_Convergence/Data/args/raw/JTT_phyml.model', sep='\t', index_col=0)
+        'JTT_phyml.model', sep='\t', index_col=0)
     PI = np.array(frequencies)
 
 
