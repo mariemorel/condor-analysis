@@ -7,8 +7,8 @@ ConDor is a workflow to detect convergent evolution without prior knowledge of p
 It is available from a web service located at https://condor.pasteur.cloud/
 
 # Help
-The data folder contains the data described in the Materials and Methods section, including sequence alignments and phylogenetic trees.  
-The results folder contains csv file corresponding to the output provided by ConDor, as well as the results from MEME, BayesTraits and PCOC. 
-The src folder contains scripts used to construct the synthetic dataset as well as the commands used to run the various tools (MEME, PastML, BayesTraits,... )
+* data folder: data described in the Materials and Methods section, including sequence alignments and phylogenetic trees.  
+* results folder: csv files corresponding to the outputs provided by ConDor, as well as the results from MEME, BayesTraits and PCOC. 
+* src folder: scripts used to construct the synthetic dataset as well as the commands used to run the various tools (MEME, PastML, BayesTraits,... )
 
 
