@@ -1,0 +1,19 @@
+alphabet=Protein
+
+input.tree1=user(file=$(TREE), format=NHX)
+
+input.data1=alignment(file=$(FILESEQ),                          sites_to_use=all,                          max_gap_allowed=$(MAX_GAP_ALLOWED)                          )
+input.sequence.remove_saturated_sites = yes
+
+root_freq1=$(ROOT_FREQ)
+rate_distribution1=$(RATE_DISTRIBUTION)
+
+process1=Homogeneous(model=1, tree=1, root_freq=1, rate=1)
+#process{number} = {Homogeneous|OnePerBranch}(tree={number}, model={number}, rate={number} [, root_freq={number}])
+
+phylo1=Single(process=1, data=1)
+
+result=phylo1
+
+### estimation
+optimization.ignore_parameters=BrLen*
