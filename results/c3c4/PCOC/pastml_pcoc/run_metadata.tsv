@@ -1,0 +1,13 @@
+Alignment	cyp_coding.aa.coor_mays.fa
+Convergent_branches	['8,4,2,0,1,3,7,5,6', '38', '49,45,48,46,47', '98,78,97,79,96,80,95,81,94,82,93,85,83,84,92,88,86,87,91,89,90', '137,133,136,134,135']
+NbCat_Est	10
+Position_to_highlight	[]
+Tree	cyp_coding.phy_phyml_tree.txt
+date	20220302_114522
+gamma	True
+inv_gamma	False
+max_gap_allowed	20
+max_gap_allowed_in_conv_leaves	5
+pp_threshold_OC	0.5
+pp_threshold_PC	0.8
+pp_threshold_PCOC	0.8
