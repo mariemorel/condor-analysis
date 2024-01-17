@@ -1,0 +1,4 @@
+pastml_root	consensus_root	position	mut	max_anc	ref_EEM	nbseq	evol_rate	genetic_distance	substitution_rate	findability	type_substitution	details	loss	loss_details	max_simu	variance	mean	pvalue_raw	adjust_pvalue	adjust_pvalue_fdr	detected_EEM	posmut	log-dep	log-indep	BF	correlation
+P	P	540	T	P	5.0	23	3.0590599999999997	1	0.02271666	1.64365547	parallel	P:5	0		5	0.22437551	0.2143	0.00034997	0.01294889	0.00664943	PASS	540T	-22.503954	-32.40534	19.802772	positive
+E	E	572	Q	E	5.0	23	3.07688	1	0.25440592	0.59447279	parallel	E:5	0		5	0.70104924	0.7226	0.00084992	0.029747199999999998	0.00721932	PASS	572Q	-22.875073999999998	-32.037653000000006	18.325158	positive
+H	H	665	N	H	5.0	23	3.06255	1	0.09825543	1.00764346	parallel	H:5	0		6	0.83928551	0.8643	0.00214979	0.06664349	0.00949907	PASS	665N	-22.802766000000002	-32.380533	19.155534	positive
