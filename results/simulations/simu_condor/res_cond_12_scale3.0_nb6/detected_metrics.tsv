@@ -1,0 +1,5 @@
+pastml_root	consensus_root	position	mut	max_anc	ref_EEM	nbseq	evol_rate	genetic_distance	substitution_rate	findability	type_substitution	details	loss	loss_details	max_simu	variance	mean	pvalue_raw	adjust_pvalue	adjust_pvalue_fdr	detected_EEM
+E	E	572	Q	E	6	24	1.75632	1	0.19893438	0.70129015	parallel	E:6	0		5	0.7533	0.77	5e-05	0.0068	0.0068	PASS
+L	S	843	G	E	3	5	1.74071	1	0.07329161	1.13494571	convergent	E:1; L:1; S:1	0		3	0.07072144	0.0684	0.00034997	0.04724595	0.01586531	PASS
+E	A	484	S	A	5	6	1.76963	1	0.28945548	0.53841822	parallel	A:5	0		5	0.28385679	0.2639	0.00034997	0.04724595	0.01586531	PASS
+P	P	540	T	P	5	23	1.67015	1	0.05940552	1.22617319	parallel	P:5	0		6	0.52648924	0.5226	0.00054995	0.07314335	0.0186983	PASS
