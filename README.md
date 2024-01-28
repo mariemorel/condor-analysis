@@ -1,3 +1,5 @@
+# :warning: Repository moved to a [new location](https://github.com/evolbioinfo/condor-analysis/) :warning:
+
 # Accurate Detection of Convergent Mutations in Large Protein Alignments with ConDor
 
 
